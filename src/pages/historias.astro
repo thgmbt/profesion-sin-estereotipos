@@ -94,8 +94,52 @@ import Layout from '../layouts/Layout.astro';
 				Tu experiencia puede inspirar a otras personas a imaginar nuevas
 				posibilidades. Este espacio está pensado para escuchar trayectorias
 				diversas con respeto, igualdad y libertad.
-				
 			</p>
 		</article>
+
+		<form class="formulario-historia" aria-describedby="estado-envio">
+			<div class="campo-formulario">
+				<label for="nombre">Nombre o seudónimo</label>
+				<input id="nombre" name="nombre" type="text" autocomplete="name" required />
+			</div>
+
+			<div class="campo-formulario">
+				<label for="correo">Correo electrónico (opcional)</label>
+				<input
+					id="correo"
+					name="correo"
+					type="email"
+					autocomplete="email"
+					aria-describedby="privacidad-correo"
+				/>
+				<small id="privacidad-correo">
+					Compártelo solo si quieres que podamos contactarte.
+				</small>
+			</div>
+
+			<div class="campo-formulario">
+				<label for="profesion">Profesión u oficio relacionado</label>
+				<input id="profesion" name="profesion" type="text" required />
+			</div>
+
+			<div class="campo-formulario">
+				<label for="historia">Tu historia</label>
+				<textarea
+					id="historia"
+					name="historia"
+					rows="7"
+					maxlength="5000"
+					aria-describedby="limite-historia"
+					required
+				></textarea>
+				<small id="limite-historia">Puedes escribir hasta 5000 caracteres.</small>
+			</div>
+
+			<p id="estado-envio" class="estado-envio" role="status">
+				El formulario está preparado, pero todavía no está conectado a un sistema
+				de envío. Tus datos no se enviarán ni guardarán.
+			</p>
+			<button type="submit" disabled>Envío próximamente</button>
+		</form>
 	</section>
 </Layout>

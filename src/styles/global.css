@@ -152,6 +152,61 @@ article {
 	border-left: 3px solid var(--color-border);
 }
 
+.formulario-historia {
+	display: grid;
+	gap: 1.25rem;
+	width: min(100%, 42rem);
+	margin: 2rem auto 0;
+	padding: clamp(1.25rem, 4vw, 2rem);
+	border: 1px solid var(--color-border);
+	border-radius: 1rem;
+	background-color: rgba(255, 255, 255, 0.5);
+	text-align: left;
+}
+
+.campo-formulario {
+	display: grid;
+	gap: 0.4rem;
+}
+
+.campo-formulario label {
+	font-weight: 700;
+}
+
+.campo-formulario input,
+.campo-formulario textarea {
+	width: 100%;
+	padding: 0.75rem;
+	border: 1px solid var(--color-border);
+	border-radius: 0.625rem;
+	background-color: rgba(255, 255, 255, 0.8);
+	color: var(--color-ink);
+	font: inherit;
+}
+
+.campo-formulario textarea {
+	resize: vertical;
+}
+
+.campo-formulario input:focus-visible,
+.campo-formulario textarea:focus-visible {
+	outline: 3px solid #5b9ebd;
+	outline-offset: 2px;
+}
+
+.campo-formulario small {
+	font-size: 0.85rem;
+}
+
+.formulario-historia .estado-envio {
+	margin: 0;
+}
+
+.formulario-historia button:disabled {
+	cursor: not-allowed;
+	opacity: 0.65;
+}
+
 footer {
 	padding-block: 1rem 2rem;
 	font-size: 0.9rem;
