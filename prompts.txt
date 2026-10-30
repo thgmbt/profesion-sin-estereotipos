@@ -32,3 +32,179 @@ Prompt 3:
 La verdad no nos gustó tanto la distribución de los párrafos, títulos,subtítulos y botones, haz 
 que se vean más centrados ya que están tirados más a la izquierda, y también invierte el fade,
 pues lo había pedido al revés
+
+prompt 4: 
+nesecito que me reemplazes este trexto o implementes el siguente ; Resulta difícil de creer que 
+hoy, en el siglo XXI, la discriminación siga siendo un problema importante, pero por mucho que 
+nos gustaría pensar que vivimos en un mundo lleno de paz, armonía y aceptación generalizada, 
+lamentablemente no es así. 
+
+De hecho, más del 25% de los trabajadores en el Reino Unido han declarado haber sufrido algún 
+tipo de discriminación en el lugar de trabajo, según un estudio realizado por Sky con motivo 
+de la Semana Nacional de la Inclusión en 2018, que identificó que los prejuicios hacia el 
+género, la raza y la edad siguen siendo bastante comunes en las empresas del Reino Unido. 
+
+Ese mismo estudio reconoció que podría estar gestándose una revolución impulsada por los 
+jóvenes para contrarrestar esta forma de pensar anticuada, ya que la "Generación Z" (la 
+población menor de 25 años) tiene el doble de probabilidades de sentir que los empleadores 
+deberían hacer más para promover la inclusión en el lugar de trabajo en comparación con los 
+baby boomers (los mayores de 55 años).  sobre este codigo;  ---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+	title="Historias"
+	description="Un espacio para compartir experiencias y trayectorias profesionales sin 
+    estereotipos de género."
+	currentPath="/historias"
+>
+	<section aria-labelledby="historias-titulo">
+		<h1 id="historias-titulo">Historias</h1>
+		<p>
+			Cada trayectoria es distinta. Aquí queremos reunir experiencias de
+			personas que exploran, aprenden y trabajan en profesiones y oficios más
+			allá de los estereotipos de género.
+		</p>
+	</section>
+
+	<section aria-labelledby="voces-titulo">
+		<h2 id="voces-titulo">Voces por conocer</h2>
+		<p>
+			Estamos preparando este espacio para compartir historias en primera
+			persona. Pronto encontrarás relatos sobre sus recorridos, aprendizajes y
+			las ideas que les ayudaron a elegir su camino.
+		</p>
+		<article>
+			<h3>¿Te gustaría compartir tu historia?</h3>
+			<p>
+				Tu experiencia puede inspirar a otras personas a imaginar nuevas
+				posibilidades. Este espacio está pensado para escuchar trayectorias
+				diversas con respeto.
+			</p>
+		</article>
+	</section>
+</Layout>  
+
+prompt 5: 
+holaa, nesecito que en este codigo; 	title="Historias"
+	description="Un espacio para compartir experiencias y reflexionar sobre la 
+    discriminación y los estereotipos de género en el mundo laboral."
+	currentPath="/historias"
+>
+	<section class="historias" aria-labelledby="historias-titulo">
+		<h1 id="historias-titulo">Historias que nos hacen reflexionar</h1>
+
+		<p class="introduccion">
+			Resulta difícil de creer que hoy, en pleno siglo XXI, la discriminación
+			siga siendo un problema importante. Aunque nos gustaría pensar que
+			vivimos en un mundo lleno de respeto, igualdad y aceptación, la realidad
+			es que todavía existen prejuicios que afectan a muchas personas,
+			especialmente en el ámbito laboral.
+		</p>
+	</section>
+
+	<section class="contenido" aria-labelledby="discriminacion-titulo">
+		<h2 id="discriminacion-titulo">
+			La discriminación en el mundo laboral
+		</h2>
+
+		<p>
+			La discriminación laboral puede manifestarse de distintas maneras,
+			como diferencias de oportunidades, prejuicios relacionados con el
+			género, la edad o el origen de las personas. Estas situaciones pueden
+			impedir que alguien desarrolle sus capacidades y alcance sus metas
+			profesionales.
+		</p>
+
+		<p>
+			Según un estudio realizado por Sky durante la Semana Nacional de la
+			Inclusión de 2018 en el Reino Unido, más del 25% de los trabajadores
+			encuestados declaró haber experimentado algún tipo de discriminación
+			en su lugar de trabajo. El estudio identificó que los prejuicios
+			relacionados con el género, la raza y la edad continuaban presentes
+			en las empresas.
+		</p>
+	</section>
+
+	<section class="contenido destacado" aria-labelledby="generaciones-titulo">
+		<h2 id="generaciones-titulo">
+			Las nuevas generaciones están cambiando la realidad
+		</h2>
+
+		<p>
+			El mismo estudio señaló una creciente preocupación por la inclusión
+			laboral entre las generaciones más jóvenes. La Generación Z, formada
+			por personas nacidas aproximadamente entre mediados de los años
+			noventa y principios de la década de 2010, muestra una mayor
+			preocupación por la necesidad de que las empresas promuevan espacios
+			de trabajo más inclusivos.
+		</p>
+
+		<p>
+			Esto demuestra que cada vez más personas están dispuestas a cuestionar
+			las ideas tradicionales y luchar por un futuro donde las oportunidades
+			profesionales no estén determinadas por el género, la edad o los
+			prejuicios sociales.
+		</p>
+	</section>
+
+	<section class="reflexion" aria-labelledby="reflexion-titulo">
+		<h2 id="reflexion-titulo">¿Qué podemos aprender de esto?</h2>
+
+		<p>
+			Todas las personas tenemos derecho a elegir nuestra profesión de
+			acuerdo con nuestros intereses, habilidades y sueños. Ningún trabajo
+			debería considerarse exclusivo para hombres o mujeres.
+		</p>
+
+		<p class="frase">
+			"El talento no tiene género, las oportunidades tampoco deberían tenerlo".
+		</p>
+	</section>
+
+	<section class="contenido" aria-labelledby="voces-titulo">
+		<h2 id="voces-titulo">Voces por conocer</h2>
+
+		<p>
+			Cada historia representa una oportunidad para romper prejuicios.
+			Queremos dar visibilidad a personas que han elegido caminos
+			profesionales diferentes a los que tradicionalmente se esperan de
+			ellas y que demuestran que los sueños no tienen límites.
+		</p>
+
+		<article class="invitacion">
+			<h3>¿Te gustaría compartir tu historia?</h3>
+			<p>
+				Tu experiencia puede inspirar a otras personas a imaginar nuevas
+				posibilidades. Este espacio está pensado para escuchar trayectorias
+				diversas con respeto, igualdad y libertad.
+				
+			</p>
+		</article>
+	</section> me implementes esta historia sin cambiar el contexto, quizas la historia 
+    podria pegarse como ejemplo; Caso de dislexia en Starbucks
+Meseret Kumulchew, empleada de Starbucks, fue acusada de fraude, ya que su empleador 
+alegó que falsificaba documentos tras introducir erróneamente información al registrar 
+las temperaturas de los refrigeradores en un informe de turnos. Como consecuencia, le 
+redujeron sus responsabilidades, eliminando partes esenciales de su puesto de supervisora, 
+y le indicaron que debía recibir capacitación adicional antes de poder retomar las 
+funciones que conformaban el trabajo que tanto le apasionaba.
+
+En una entrevista, Meseret expresó que la hicieron sentir como una impostora y que 
+estuvo a punto de quitarse la vida. Lo único que la detuvo fue el pensamiento de sus hijos. 
+
+Meseret demandó a Starbucks ante un tribunal laboral por discriminación por 
+discapacidad, alegando que desde el principio había sido sincera con sus empleados, 
+explicándoles que era disléxica, lo que significa que tiene dificultades para leer, 
+escribir y saber la hora. También les informó que aprende visualmente, lo que 
+implica que necesita que le muestren físicamente cómo realizar una tarea para poder aprender. 
+
+El tribunal determinó que Starbucks no realizó ajustes razonables para Meseret y
+ la discriminó debido a los efectos de su dislexia. También se constató que fue 
+ víctima de acoso por parte de su empleador y que, al parecer, existía poco o ningún 
+ conocimiento o comprensión de las cuestiones de igualdad dentro de la empresa.
+
+Prompt 5:
+
+en la pagina de historia implementa un formlario abajo de la pregunta final para que 
+puedas enviar una historia 
