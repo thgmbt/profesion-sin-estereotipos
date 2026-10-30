@@ -8,3 +8,27 @@ Inicio, Mitos y
 realidades, Historias, por el momento solo haz el html de 
 cada página, haz tres props reutilizables, de los cuales 2 
 serán la Nabvar y el Footer. 
+
+Prompt 2: 
+
+Para el css utiliza un global (ssrc/css/global.css) donde hayan estilos generales, los cuales 
+quiero que sean la adaptabilidad a las pantallas, los colores del fondo y asi. Para el color del 
+fondo queremos algo minimalista: Ocupa un verde menta con una gradiente en color amarillo pastel
+hacia abajo que emerja desde arriba y el lado izquierdo. La barra de navegación que sea de color 
+amarillo pastel o algun color que combine bien con el fondo; haz que todos los botones del sitio 
+tengan un hoover que cambie a un color azul pastel y que cuando el cursor pase sobre los botones
+   que estos sobresalgan . Haz las fuentes en base a esta: <link rel="preconnect"
+    href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" 
+rel="stylesheet"> . 
+Que cada parrafo del sitio este en un contenedor con esquinas curvas (unos 10px), tenga un borde 
+amarillo pastel para conbinar pero que no sea tan grueso (1px) Procura que al implementar los 
+colores estos estén en código hexadecimal
+
+
+Prompt 3:
+
+La verdad no nos gustó tanto la distribución de los párrafos, títulos,subtítulos y botones, haz 
+que se vean más centrados ya que están tirados más a la izquierda, y también invierte el fade,
+pues lo había pedido al revés
