@@ -1,0 +1,30 @@
+---
+interface Props {
+	currentPath: string;
+}
+
+const { currentPath } = Astro.props;
+
+const links = [
+	{ href: '/', label: 'Inicio' },
+	{ href: '/mitos-realidades', label: 'Mitos y realidades' },
+	{ href: '/historias', label: 'Historias' },
+];
+---
+
+<header>
+	<a href="/" aria-label="Profesiones sin estereotipos, ir al inicio">
+		Profesiones sin estereotipos
+	</a>
+	<nav aria-label="Navegación principal">
+		<ul>
+			{links.map(({ href, label }) => (
+				<li>
+					<a href={href} aria-current={currentPath === href ? 'page' : undefined}>
+						{label}
+					</a>
+				</li>
+			))}
+		</ul>
+	</nav>
+</header>

@@ -1,16 +1,37 @@
 ---
+import Layout from '../layouts/Layout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Profesión sin Estereotipos</title>
-	</head>
-	<body>
-		<h1>Profesión sin Estereotipos</h1>
-	</body>
-</html>
+<Layout
+	title="Inicio"
+	description="Un espacio para cuestionar los prejuicios de género asociados a las profesiones y los oficios."
+	currentPath="/"
+>
+	<section aria-labelledby="inicio-titulo">
+		<h1 id="inicio-titulo">Profesiones sin estereotipos</h1>
+		<p>
+			Creemos que el talento, los intereses y las oportunidades no tienen género.
+			Este espacio invita a cuestionar las ideas que limitan quién puede imaginar
+			y construir su futuro en cada profesión u oficio.
+		</p>
+		<p>
+			Explora información para reconocer los estereotipos y conocer experiencias
+			que amplían nuestra manera de ver el mundo laboral.
+		</p>
+		<nav aria-label="Explorar el sitio">
+			<ul>
+				<li><a href="/mitos-realidades">Descubre mitos y realidades</a></li>
+				<li><a href="/historias">Conoce historias</a></li>
+			</ul>
+		</nav>
+	</section>
+
+	<section aria-labelledby="proposito-titulo">
+		<h2 id="proposito-titulo">¿Por qué hablar de estereotipos?</h2>
+		<p>
+			Las expectativas sobre el género pueden influir en las decisiones
+			educativas y laborales. Ponerlas en conversación es un primer paso para
+			imaginar opciones más libres e inclusivas.
+		</p>
+	</section>
+</Layout>

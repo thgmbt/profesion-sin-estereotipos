@@ -1,0 +1,10 @@
+Prompt 1:
+
+Estamos haciendo un prollecto llamado "Profesiones sin estereotipos"
+Sitio que busca cuestionar los prejuicios
+asociados al género en las profesiones y oficios.
+donde queremos implementar estas 3 paginas
+Inicio, Mitos y
+realidades, Historias, por el momento solo haz el html de 
+cada página, haz tres props reutilizables, de los cuales 2 
+serán la Nabvar y el Footer. 
