@@ -1,0 +1,189 @@
+:root {
+	color-scheme: light;
+	font-family: 'Black Ops One', system-ui, sans-serif;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	--color-mint: #e0f3e9;
+	--color-pastel-yellow: #fff1a8;
+	--color-pastel-blue: #b9e3f5;
+	--color-ink: #263b35;
+	--color-border: #ecd978;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	min-width: 320px;
+	min-height: 100%;
+	background-color: var(--color-mint);
+	background-image: radial-gradient(
+		ellipse at top left,
+		rgba(255, 241, 168, 0.9) 0,
+		rgba(255, 241, 168, 0.45) 26%,
+		transparent 62%
+	);
+	scroll-behavior: smooth;
+}
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	color: var(--color-ink);
+	background: linear-gradient(135deg, transparent, rgba(224, 243, 233, 0.72));
+	line-height: 1.65;
+}
+
+header,
+footer,
+main {
+	width: min(100% - 2rem, 72rem);
+	margin-inline: auto;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1.5rem;
+	margin-top: 1rem;
+	padding: 1rem 1.5rem;
+	border: 1px solid rgba(236, 217, 120, 0.8);
+	border-radius: 1rem;
+	background: rgba(255, 241, 168, 0.88);
+	box-shadow: 0 0.5rem 1.5rem rgba(38, 59, 53, 0.08);
+}
+
+header > a {
+	color: inherit;
+	font-size: clamp(1rem, 2vw, 1.4rem);
+	text-decoration: none;
+}
+
+nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav a,
+main a,
+button,
+input[type='submit'] {
+	display: inline-block;
+	padding: 0.65rem 1rem;
+	border: 1px solid rgba(38, 59, 53, 0.12);
+	border-radius: 0.75rem;
+	background-color: rgba(255, 255, 255, 0.62);
+	color: var(--color-ink);
+	font: inherit;
+	line-height: 1.4;
+	text-decoration: none;
+	cursor: pointer;
+	transition:
+		background-color 160ms ease,
+		box-shadow 160ms ease,
+		transform 160ms ease;
+}
+
+nav a[aria-current='page'] {
+	background-color: rgba(255, 255, 255, 0.9);
+	box-shadow: inset 0 0 0 1px var(--color-border);
+}
+
+nav a:hover,
+main a:hover,
+button:hover,
+input[type='submit']:hover {
+	transform: translateY(-3px);
+	background-color: var(--color-pastel-blue);
+	box-shadow: 0 0.5rem 1rem rgba(38, 59, 53, 0.16);
+}
+
+a:focus-visible,
+button:focus-visible,
+input[type='submit']:focus-visible {
+	outline: 3px solid #5b9ebd;
+	outline-offset: 3px;
+}
+
+main {
+	padding-block: clamp(2rem, 6vw, 5rem);
+}
+
+section + section {
+	margin-top: clamp(2.5rem, 6vw, 4rem);
+}
+
+h1,
+h2,
+h3 {
+	line-height: 1.2;
+	text-wrap: balance;
+}
+
+h1 {
+	font-size: clamp(2rem, 6vw, 3.5rem);
+}
+
+h2 {
+	font-size: clamp(1.5rem, 4vw, 2.25rem);
+}
+
+p {
+	max-width: 72ch;
+	margin-block: 1rem;
+	padding: 1rem 1.2rem;
+	border: 1px solid var(--color-border);
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.42);
+}
+
+article {
+	margin-block: 1.5rem;
+	padding: 0.25rem 1.25rem;
+	border-left: 3px solid var(--color-border);
+}
+
+footer {
+	padding-block: 1rem 2rem;
+	font-size: 0.9rem;
+}
+
+@media (max-width: 640px) {
+	header {
+		align-items: flex-start;
+		flex-direction: column;
+		padding: 1rem;
+	}
+
+	header nav,
+	header nav ul {
+		width: 100%;
+	}
+
+	header nav ul {
+		gap: 0.5rem;
+	}
+
+	nav a,
+	main a,
+	button,
+	input[type='submit'] {
+		padding: 0.6rem 0.8rem;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	* {
+		scroll-behavior: auto !important;
+		transition-duration: 0.01ms !important;
+	}
+}
